@@ -39,11 +39,12 @@ while (continuar) {
     // Exibe o resultado
     console.log(`O Herói tem de saldo de ${resultado.saldoVitorias} está no nível de ${resultado.nivel}`);
 
-    // Pergunta se o jogador deseja continuar
-    let resposta = prompt("Deseja continuar? S/N").toUpperCase(); // Converte para maiúsculas para facilitar a comparação
-    if (resposta === "S") {
-        continuar = true;
+    // perguntar se deseja continuar ou não
+    let resposta = prompt("Deseja continuar? S/N")
+
+    if (resposta == "S" || "s") {
+        continuar = true
     } else {
-        continuar = false;
+        continuar = false
     }
 }
